@@ -75,3 +75,125 @@ sub _read_graph {
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Graph::Reader::UnicodeTree - Perl class for reading a graph from unicode tree text format.
+
+=head1 SYNOPSIS
+
+ use Graph::Reader::UnicodeTree;
+ my $obj = Graph::Reader::UnicodeTree->new;
+ my $graph = $obj->read_graph($unicode_tree_file);
+
+=head1 METHODS
+
+=over 8
+
+=item C<new()>
+
+ Constructor.
+ This doesn't take any arguments.
+ Returns Graph::Reader::UnicodeTree object.
+
+=item C<read_graph($unicode_tree_file)>
+
+ Read a graph from the specified file.
+ The argument can either be a filename, or a filehandle for a previously opened file.
+ Returns Graph object.
+
+=back
+
+=head1 UNICODE TREE FILE FORMAT
+
+ Vertices are simple text.
+ Edges are '─┬─' or '───' in main line and ' ├─' or ' └─' in other lines.
+ Example:
+ 1─┬─2
+   ├─3───4
+   ├─5
+   ├─6─┬─7
+   │   ├─8
+   │   └─9
+   └─10
+
+=head1 EXAMPLE1
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Encode qw(decode_utf8 encode_utf8);
+ use Graph::Reader::UnicodeTree;
+ use IO::Barf qw(barf);
+ use File::Temp qw(tempfile);
+
+ # Example data.
+ my $data = decode_utf8(<<'END');
+ 1─┬─2
+   ├─3───4
+   ├─5
+   ├─6─┬─7
+   │   ├─8
+   │   └─9
+   └─10
+ END
+
+ # Temporary file.
+ my (undef, $tempfile) = tempfile();
+
+ # Save data to temp file.
+ barf($tempfile, encode_utf8($data));
+
+ # Reader object.
+ my $obj = Graph::Reader::UnicodeTree->new;
+
+ # Get graph from file.
+ my $g = $obj->read_graph($tempfile);
+
+ # Print to output.
+ print $g."\n";
+
+ # Output:
+ # 1-10,1-2,1-3,1-5,1-6,3-4,6-7,6-8,6-9
+
+=head1 DEPENDENCIES
+
+L<Encode>,
+L<Graph::Reader>,
+L<Readonly>.
+
+=head1 SEE ALSO
+
+L<Graph::Reader>,
+L<Graph::Reader::Dot>,
+L<Graph::Reader::HTK>,
+L<Graph::Reader::LoadClassHierarchy>,
+L<Graph::Reader::XML>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Graph-Reader-UnicodeTree>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
