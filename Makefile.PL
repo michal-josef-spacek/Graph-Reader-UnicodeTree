@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'TODO';
+abstract 'Perl class for reading a graph from unicode tree text format.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Graph-Reader-UnicodeTree';
