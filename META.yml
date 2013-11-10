@@ -23,6 +23,7 @@ meta-spec:
 name: Graph-Reader-UnicodeTree
 no_index:
   directory:
+    - examples
     - inc
     - t
 requires:
