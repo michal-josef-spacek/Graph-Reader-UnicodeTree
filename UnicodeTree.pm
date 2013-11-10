@@ -14,7 +14,7 @@ Readonly::Scalar our $GR_LINE => decode_utf8(q{───});
 Readonly::Scalar our $GR_TREE => decode_utf8(q{─┬─});
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Read graph subroutine.
 sub _read_graph {
@@ -194,6 +194,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
