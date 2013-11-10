@@ -10,7 +10,6 @@ use Encode qw(decode_utf8);
 use Readonly;
 
 # Constants.
-Readonly::Scalar our $EMPTY_STR => q{};
 Readonly::Scalar our $GR_LINE => decode_utf8(q{───});
 Readonly::Scalar our $GR_TREE => decode_utf8(q{─┬─});
 
