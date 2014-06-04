@@ -30,7 +30,7 @@ UNICODE TREE FILE FORMAT
        │   └─9
        └─10
 
-EXAMPLE1
+EXAMPLE
      # Pragmas.
      use strict;
      use warnings;

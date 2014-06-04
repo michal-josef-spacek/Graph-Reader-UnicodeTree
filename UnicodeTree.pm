@@ -123,7 +123,7 @@ Graph::Reader::UnicodeTree - Perl class for reading a graph from unicode tree te
    │   └─9
    └─10
 
-=head1 EXAMPLE1
+=head1 EXAMPLE
 
  # Pragmas.
  use strict;
