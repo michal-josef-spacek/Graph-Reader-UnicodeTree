@@ -176,6 +176,7 @@ L<Graph::Reader>,
 L<Graph::Reader::Dot>,
 L<Graph::Reader::HTK>,
 L<Graph::Reader::LoadClassHierarchy>,
+L<Graph::Reader::TGF>,
 L<Graph::Reader::XML>.
 
 =head1 REPOSITORY
