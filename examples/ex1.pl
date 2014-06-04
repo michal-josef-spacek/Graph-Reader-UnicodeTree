@@ -33,6 +33,9 @@ my $obj = Graph::Reader::UnicodeTree->new;
 # Get graph from file.
 my $g = $obj->read_graph($tempfile);
 
+# Clean temporary file.
+unlink $tempfile;
+
 # Print to output.
 print $g."\n";
 

@@ -1,6 +1,7 @@
 0.02
  - Add Graph::Reader::TGF to SEE ALSO section in doc.
  - Fix LICENSE file.
+ - Fix cleaning of temporary file in EXAMPLE section in doc.
  - Update Module::Install to 1.08 version.
 
 0.01 2013-11-10
