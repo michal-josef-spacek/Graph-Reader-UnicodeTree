@@ -3,7 +3,7 @@
  - Add Graph::Reader::TGF::CSV to SEE ALSO section in doc.
  - Fix LICENSE file.
  - Fix cleaning of temporary file in EXAMPLE section in doc.
- - Update Module::Install to 1.08 version.
+ - Update Module::Install to 1.10 version.
 
 0.01 2013-11-10
  - First version.
