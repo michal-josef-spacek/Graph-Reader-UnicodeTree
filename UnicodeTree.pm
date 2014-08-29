@@ -179,6 +179,7 @@ L<Graph::Reader>,
 L<Graph::Reader::Dot>,
 L<Graph::Reader::HTK>,
 L<Graph::Reader::LoadClassHierarchy>,
+L<Graph::Reader::OID>,
 L<Graph::Reader::TGF>,
 L<Graph::Reader::TGF::CSV>,
 L<Graph::Reader::XML>.
