@@ -14,7 +14,7 @@ Readonly::Scalar our $GR_LINE => decode_utf8(q{───});
 Readonly::Scalar our $GR_TREE => decode_utf8(q{─┬─});
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Read graph subroutine.
 sub _read_graph {
@@ -204,6 +204,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
