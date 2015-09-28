@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Perl class for reading a graph from unicode tree text format.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Graph-Reader-UnicodeTree';
 readme_from 'UnicodeTree.pm';
