@@ -3,6 +3,7 @@
  - Fix cleaning of temporary file in EXAMPLE section in doc.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SEE ALSO section in doc.
+ - Move author tests to xt/ directory.
  - Remove diacritics from author name in Makefile.PL.
  - Update Module::Install to 1.16 version.
 
