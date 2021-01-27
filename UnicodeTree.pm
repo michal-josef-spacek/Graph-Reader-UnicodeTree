@@ -86,6 +86,7 @@ Graph::Reader::UnicodeTree - Perl class for reading a graph from unicode tree te
 =head1 SYNOPSIS
 
  use Graph::Reader::UnicodeTree;
+
  my $obj = Graph::Reader::UnicodeTree->new;
  my $graph = $obj->read_graph($unicode_tree_file);
 
