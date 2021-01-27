@@ -1,5 +1,6 @@
 0.03
  - Add example to doc.
+ - Fix Makefile.PL and use lib.
  - Fix bugtracker.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.19 version.
