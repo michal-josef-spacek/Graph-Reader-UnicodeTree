@@ -8,15 +8,20 @@ SYNOPSIS
      my $graph = $obj->read_graph($unicode_tree_file);
 
 METHODS
-    "new()"
-             Constructor.
-             This doesn't take any arguments.
-             Returns Graph::Reader::UnicodeTree object.
+  "new"
+     my $obj = Graph::Reader::UnicodeTree->new;
 
-    "read_graph($unicode_tree_file)"
-             Read a graph from the specified file.
-             The argument can either be a filename, or a filehandle for a previously opened file.
-             Returns Graph object.
+    Constructor. This doesn't take any arguments.
+
+    Returns Graph::Reader::UnicodeTree object.
+
+  "read_graph"
+     my $graph = $obj->read_graph($unicode_tree_file);
+
+    Read a graph from the specified file. The argument can either be a
+    filename, or a filehandle for a previously opened file.
+
+    Returns Graph object.
 
 UNICODE TREE FILE FORMAT
      Vertices are simple text.

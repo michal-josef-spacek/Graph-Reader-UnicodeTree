@@ -91,21 +91,23 @@ Graph::Reader::UnicodeTree - Perl class for reading a graph from unicode tree te
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new()>
+ my $obj = Graph::Reader::UnicodeTree->new;
 
- Constructor.
- This doesn't take any arguments.
- Returns Graph::Reader::UnicodeTree object.
+Constructor.
+This doesn't take any arguments.
 
-=item C<read_graph($unicode_tree_file)>
+Returns Graph::Reader::UnicodeTree object.
 
- Read a graph from the specified file.
- The argument can either be a filename, or a filehandle for a previously opened file.
- Returns Graph object.
+=head2 C<read_graph>
 
-=back
+ my $graph = $obj->read_graph($unicode_tree_file);
+
+Read a graph from the specified file.
+The argument can either be a filename, or a filehandle for a previously opened file.
+
+Returns Graph object.
 
 =head1 UNICODE TREE FILE FORMAT
 
