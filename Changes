@@ -1,5 +1,6 @@
 0.03
  - Update Module::Install to 1.19 version.
+ - Update author name.
 
 0.02 2015-09-28T19:56:27+02:00
  - Fix LICENSE file.
