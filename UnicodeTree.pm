@@ -209,7 +209,7 @@ Install the Graph::Reader modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Graph-Reader-UnicodeTree>
+L<https://github.com/michal-josef-spacek/Graph-Reader-UnicodeTree>
 
 =head1 AUTHOR
 
