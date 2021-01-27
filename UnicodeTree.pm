@@ -1,11 +1,9 @@
 package Graph::Reader::UnicodeTree;
 
-# Pragmas.
 use base qw(Graph::Reader);
 use strict;
 use warnings;
 
-# Modules.
 use Encode qw(decode_utf8);
 use Readonly;
 
@@ -13,7 +11,6 @@ use Readonly;
 Readonly::Scalar our $GR_LINE => decode_utf8(q{───});
 Readonly::Scalar our $GR_TREE => decode_utf8(q{─┬─});
 
-# Version.
 our $VERSION = 0.03;
 
 # Read graph subroutine.
@@ -125,11 +122,9 @@ Graph::Reader::UnicodeTree - Perl class for reading a graph from unicode tree te
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Encode qw(decode_utf8 encode_utf8);
  use Graph::Reader::UnicodeTree;
  use IO::Barf qw(barf);
